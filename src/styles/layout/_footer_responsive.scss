@@ -1,0 +1,41 @@
+@use '/src/styles/utils/mixins' as *;
+@use'/src/styles/utils/variables' as *;
+/* MOVIL HORIZONTAL */
+.footer{
+    @include breakpoint(mobil){
+        #footer_container{
+            .aside .aside_nav{
+                    gap: 6em;
+            }
+        }
+    }
+    /* TABLET */
+    @include breakpoint(tablet){
+        #footer_container{
+            @include breakpoint(tablet){
+                padding-left: 6em;
+                padding-right: 6em;
+            }
+            
+            @include breakpoint(desktop){
+                padding-left: 11em;
+                padding-right: 11em;
+                width: 100%;
+                .aside .aside_nav{
+                    display: flex;
+                    gap: 12em;
+                    margin-bottom: 3em;
+                    .icon{
+                        width: 3em;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    /* TABLET HORIZONTAL */
+    
+    /* DESKTOP */
+    
+}

@@ -1,0 +1,49 @@
+@use '/src/styles/utils/mixins' as *;
+@use'/src/styles/utils/variables' as *;
+.footer{
+    
+    
+    #footer_container{
+        padding-left: .5em;
+        padding-right: .5em;
+        width: 100vw; max-width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+        
+        .aside{
+            background-color: transparent;
+            margin-bottom: .5em;
+            padding: 1em;
+            color: $white;
+            border-radius: .6em;
+            box-shadow: 0px -10px 022px 1px $white inset;
+            
+            justify-items: center;
+            .aside_nav{
+                display: flex;
+                gap: 3em;
+                margin-bottom: 1em;
+              
+                .icon{
+                    width: 2em;
+                    
+                }
+            }
+            .add{
+                justify-items: center;
+                .copyrigth{
+                    color: $white;
+                    font-size: .8rem;
+                    font-family: $primary-font;
+                    span{
+                        color: $green;
+                        font-weight: bold;
+                        font-size: 1rem;
+                        font-family: $brand-font;
+                    
+                    }
+                }
+            }
+        }
+    }
+}   

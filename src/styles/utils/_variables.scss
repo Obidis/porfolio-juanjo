@@ -1,0 +1,50 @@
+/* SCSS Variables & Design Tokens - Mobile-First Portfolio */
+
+/* Breakpoints */
+$bp-mobile: 640px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-wide: 1280px;
+
+/* Typography */
+$font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+$font-mono: 'Fira Code', monospace;
+
+/* Accent & Brand Colors */
+$accent-color: #5cd93e;
+$accent-glow: rgba(92, 217, 62, 0.35);
+$accent-hover: #4ec232;
+$accent-secondary: #00f2fe;
+
+/* Dark Theme Colors */
+$bg-dark: #0b0f19;
+$bg-dark-secondary: #131b2e;
+$card-bg-dark: rgba(19, 27, 46, 0.75);
+$border-dark: rgba(255, 255, 255, 0.1);
+$text-dark: #f8fafc;
+$text-muted-dark: #94a3b8;
+
+/* Light Theme Colors */
+$bg-light: #f8fafc;
+$bg-light-secondary: #ffffff;
+$card-bg-light: rgba(255, 255, 255, 0.85);
+$border-light: rgba(0, 0, 0, 0.08);
+$text-light: #0f172a;
+$text-muted-light: #64748b;
+
+/* Badges & Tech Colors */
+$badge-html: #e34f26;
+$badge-css: #1572b6;
+$badge-js: #f7df1e;
+$badge-react: #61dafb;
+$badge-python: #3776ab;
+$badge-java: #007396;
+$badge-sql: #4479a1;
+
+/* Transitions & Effects */
+$transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+$glass-backdrop: blur(12px);

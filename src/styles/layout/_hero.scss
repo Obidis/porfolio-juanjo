@@ -1,0 +1,97 @@
+@use '/src/styles/utils/mixins' as *;
+@use'/src/styles/utils/variables' as *;
+
+.hero{
+    
+    .hero_container{
+        
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100dvw; max-width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+        
+        
+        
+        
+       
+       .contact_info{
+        padding: 1em;
+        
+        
+        border: 2px solid $bg2;
+        border-radius: 1em;
+        
+        
+        .info{
+            text-align: center;
+            background-color: transparent;
+            margin-bottom: .5em;
+            padding: 1em .5em;
+            border-radius: .6em;
+            box-shadow: 0px -10px 22px 1px $white inset;
+
+            margin-bottom: 1em;
+            .logos{
+                display: flex;
+                justify-content: center;
+                gap: 1em;
+                margin-bottom: 1em;
+                .icons{
+                    width: 2em;
+                }
+            }
+            h1 {
+               @include sign;
+               margin-bottom: 1em;
+              }
+            
+        }
+        
+        .contact_list{
+            @include breakpoint(tablet){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1em;
+               
+            }
+            .contact_item{
+                margin-bottom: 1em;
+                
+                .contact_info{
+                    background-color: transparent;
+                    box-shadow: 0px -15px 22px 1px $white inset;
+                    margin-bottom: .5em;
+                    font-family: $primary-font;
+                    border-radius: .6em;
+                    @include breakpoint(tablet){
+                        justify-items: center;
+                    }
+                    &:hover  {
+                        transform: translateY(-3px);
+                        box-shadow: 0 10px 20px;
+                        color: $green;
+                    }
+                    
+                    .contact_title{ 
+                        color: $h-color;
+                        display: flex;
+                        font-weight: bold;
+                        font-family: $matrix;
+                        img.icon{
+                            margin-right: 1em;
+                            width: 1.5em;
+                        }
+                    }
+                    .contact_link{
+                        text-decoration: none;
+                        color: $white;
+                        margin-left: 1.5em;
+
+                    }
+                }
+            }
+        }
+       }
+    }
+}

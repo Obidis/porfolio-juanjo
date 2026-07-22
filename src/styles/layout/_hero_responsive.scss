@@ -1,0 +1,21 @@
+@use '/src/styles/utils/mixins' as *;
+@use'/src/styles/utils/variables' as *;
+
+/* MOVIL HORIZONTAL */
+.hero{
+   .hero_container{
+        @include breakpoint(tablet){
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+        @include breakpoint(tablethorizontal){
+            padding-left: 10em;
+            padding-right: 10em;
+        }
+        @include breakpoint(desktopxl){
+            padding-left: 10em;
+            padding-right: 10em;
+        }
+   }
+}
+   

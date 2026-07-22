@@ -1,0 +1,97 @@
+@use '/src/styles/utils/mixins' as *;
+@use'/src/styles/utils/variables' as *;
+
+.hero_porfolio{
+    .container{
+        margin: 0;
+       .neons h1{
+        @include sign;
+        font-size: 1.7rem;
+        margin-top: .5em;
+       }
+           
+    }
+    .container_porfolio{
+        padding-right: 1em;
+        width: 100vw; max-width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+        position: relative;
+        @include breakpoint(tablethorizontal){
+            padding-left: 16em;
+            padding-right: 16em;
+        }
+        @include breakpoint(desktopxl){
+            padding-left: 22em;
+            padding-right: 22em;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: $h-color;
+            border-radius: .6em;
+            margin-top: 1em;
+            
+            .swiper-wrapper{
+               
+                .swiper-slide{
+                    justify-items: center;
+                    align-content: center;
+                    
+                    
+                    .proyects_article{
+                        display:flexbox;
+                        text-align: center;
+                        background-color: transparent;
+                        margin-bottom: .5em;
+                        padding: 1em;
+                        color: $h-color;
+                        border-radius: .6em;
+                        
+                        @include breakpoint(tablet){
+                            justify-items: center;
+                            
+                        }
+                        .article_body{
+                            
+                            .article_title{
+                                margin-top: 1em;
+                                color: $h-color;
+                                margin-bottom: 1em;
+                            }
+                            .article_subtitle{
+                                margin-bottom: 1em;
+                            }
+                            
+                            .logos{
+                                display: flex;
+                                justify-content: center;
+                                gap: 2em;
+                                margin-bottom: 1em;
+                            }
+                            
+        
+                        }
+                        
+                    }
+                }
+            }    
+            .swiper-pagination{
+                position: relative;
+                .swiper-pagination-bullet {
+                    background-color: $white;
+                    
+                }
+                .swiper-pagination-bullet-active{
+                    background-color: $green;
+                }
+            }
+            .swiper-button-prev,.swiper-button-next{
+               top: 17em;
+                
+                
+            }
+        }
+    }
+}

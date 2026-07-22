@@ -1,0 +1,115 @@
+@use '/src/styles/utils/mixins' as *;
+@use'/src/styles/utils/variables' as *;
+
+
+    #nav{
+        margin-left:auto;
+        @include breakpoint(desktopxl){
+           
+                
+            
+        }
+        ul {
+            list-style: none;
+                
+            
+            @include breakpoint(tablet){
+                display: flex;
+                background-image: none;
+                gap: 3em;
+                
+            }
+            @include breakpoint(tablethorizontal){
+                display: flex;
+                background-image: none;
+                gap: 5em;
+            }
+            
+            @include breakpoint(desktop){
+                gap: 5em;
+                
+            }
+            @include breakpoint(desktopxl){
+                
+                gap: 5em;
+                
+            }
+        }
+        a {
+        text-decoration: none;
+        }
+        #menu-hamburguesa {
+            display:none;
+            width: 100%;
+            text-align:center;
+            @include breakpoint(tablet){
+                display: flex;
+                justify-content: center;
+            }
+            ul li {
+                padding: .2em;
+            }
+            ul li a {
+                color: $green;
+                font-size: 1.2rem;
+                font-family: $primary-font;
+                display: block;
+                &:hover{
+                    color: $white;
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 20px;
+                    border-radius: .5em;
+                    transform: $trans;
+                }
+                @include breakpoint(tabletpro){
+                    font-size: 1.6em;
+                    
+                }
+                @include breakpoint(desktop){
+                    font-size: 1.8em;
+                    
+                }
+            }
+            ul .master{
+                position: relative;
+            }
+            ul ul {
+                display:none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                
+                padding:0;
+                
+            }
+            ul ul li{
+                float:none;
+                width:fit-content;
+            }
+            ul ul a {
+                line-height:120%;
+                padding:10px 15px;
+            }
+            ul li:hover > ul{
+                display: block;
+            }
+        }
+        #boton-hamburguesa {
+            position: absolute;
+            display: flex;
+            margin-left: auto;
+            top:1em;
+            right: 1em;
+            background-color: transparent;
+            color: $green;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            padding: .8em;
+            border: none;
+            
+            @include breakpoint(tablet){
+                display: none;
+            }
+        }
+    }
+ 

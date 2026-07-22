@@ -1,0 +1,23 @@
+/* src/styles/_about.scss */
+
+@use './utils/variables' as *;
+
+.about-section {
+  padding: 4rem 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.about-section h2 {
+  font-family: $primary-font;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}

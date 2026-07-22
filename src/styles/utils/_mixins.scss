@@ -1,0 +1,110 @@
+@use '/src/styles/utils/variables' as *;
+
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+  @if $bp == mobil {
+    @media (min-width: $bp-mobil-horizontal) {
+      @content;
+    }
+  }
+  @if $bp == tabletpro {
+    @media (min-width: $bp-tablet-pro) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktopxl) {
+      @content;
+    }
+  }
+}
+
+/* butons */
+
+
+
+
+
+
+
+
+@mixin button2{
+  display: inline-block;
+  padding: .4em 1em .4em 1em;
+  color: $h-color;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 14px;
+  transition: $trans;
+  font-family: 'Codystar';
+  font-weight: bold;
+  letter-spacing: .2em;
+  box-shadow: 0px -10px 20px 0px $white inset;
+  border-radius: 1em;
+  &:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px;
+    color: $black;
+    transition: $trans;
+    background-color: $h-color;
+    
+  }
+}
+
+
+/* resets */
+
+@mixin reset-list{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  li > a{
+    text-decoration: none;
+    font-size: 1em;
+    color: $black;
+    &:hover{
+      color:$green;
+    }
+  }
+}
+@mixin hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px;
+  color: $blue;
+  transition: $trans;
+}
+
+@mixin neon{
+  margin-top: 1em;
+  text-align: center;
+  font-weight: bold;
+  -webkit-animation: glow2 2s ease-in-out infinite alternate;
+  -moz-animation: glow2 2s ease-in-out infinite alternate;
+  animation: glow2 2s ease-in-out infinite alternate;
+}
+@mixin sign{
+  font-size: 1.3rem;
+  text-shadow: 0 0 5px #4ee1a0, 0 0 10px #4ee1a0, 0 0 20px #4ee1a0, 0 0 40px #4ee1a0, 0 0 80px #4ee1a0;
+  color: $h-color;
+  font-family: 'Codystar';
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}

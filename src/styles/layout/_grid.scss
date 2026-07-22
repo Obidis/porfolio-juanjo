@@ -1,0 +1,62 @@
+// src/styles/layout/_grid.scss
+@use '../utils/variables' as *;
+
+.portfolio-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  @media (min-width: $bp-tablet) {
+    padding: 1.5rem 2rem;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding: 2rem 3rem;
+  }
+}
+
+/* Main Layout Grid */
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: $bp-desktop) {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+}
+
+/* Sticky Desktop Sidebar */
+.sidebar {
+  width: 100%;
+
+  @media (min-width: $bp-desktop) {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    /* Smooth scrollbar for sidebar */
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) transparent;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--accent-color);
+      border-radius: 4px;
+    }
+  }
+}
+
+/* Main Content Area */
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}

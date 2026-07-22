@@ -1,0 +1,9 @@
+// src/styles/main.scss
+
+@use './utils/variables';
+@use './_theme';
+@use './layout/grid';
+@use './components/header';
+@use './components/sidebar';
+@use './components/project-card';
+@use './skills';

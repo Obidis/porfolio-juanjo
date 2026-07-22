@@ -1,0 +1,35 @@
+@use '/src/styles/utils/mixins' as *;
+@use'/src/styles/utils/variables' as *;
+
+
+ .header{
+    position: relative;
+    
+    .header_container{
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 1em;
+        margin: 0 auto;
+        
+        justify-items: center;
+            
+        .logo{
+            margin-bottom: 1em;
+            margin-top: 1em;
+           
+            
+        }
+        .header_name{
+           
+            margin-bottom: .5em;
+            padding: .3em .5em;
+            color: $h-color;
+            border-radius: .6em;
+            box-shadow: 0px -15px 20px 1px $white inset;
+            font-size: 1.8em;
+            @include neon;
+        }
+        
+       
+    }
+}

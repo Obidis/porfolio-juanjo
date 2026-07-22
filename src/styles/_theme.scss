@@ -1,0 +1,48 @@
+// src/styles/_theme.scss
+@use './utils/variables' as *;
+
+:root {
+  /* Default: Light theme */
+  --bg-main: #{$bg-light};
+  --bg-secondary: #{$bg-light-secondary};
+  --card-bg: #{$card-bg-light};
+  --card-border: #{$border-light};
+  --text-main: #{$text-light};
+  --text-muted: #{$text-muted-light};
+  --accent-color: #{$accent-color};
+  --accent-glow: #{$accent-glow};
+  --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] {
+  /* Dark theme */
+  --bg-main: #{$bg-dark};
+  --bg-secondary: #{$bg-dark-secondary};
+  --card-bg: #{$card-bg-dark};
+  --card-border: #{$border-dark};
+  --text-main: #{$text-dark};
+  --text-muted: #{$text-muted-dark};
+  --accent-color: #{$accent-color};
+  --accent-glow: #{$accent-glow};
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

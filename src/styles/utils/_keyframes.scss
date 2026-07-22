@@ -1,0 +1,72 @@
+@use '/src/styles/utils/mixins' as *;
+@use'/src/styles/utils/variables' as *;
+
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #EAF964, 0 0 20px #EAF964, 0 0 40px #EAF964, 0 0 80px #EAF964, 0 0 160px #EAF964;
+    }
+    100% {
+        text-shadow: 0 0 5px #4ee1a0, 0 0 10px #4ee1a0, 0 0 20px #4ee1a0, 0 0 40px #4ee1a0, 0 0 80px #4ee1a0;
+    }
+}
+
+@keyframes glow2 {
+  from {
+    color: #75FB4C;
+    text-shadow: 0 0 10px #75FB4C, 0 0 20px #75FB4C, 0 0 30px #75FB4C, 0 0 40px #75FB4C, 0 0 50px #75FB4C, 0 0 60px #75FB4C, 0 0 70px #75FB4C, 0 0 90px #75FB4C;
+  }
+  to {
+    color: #75FB4C;
+    text-shadow: 0 0 20px #75FB4C, 0 0 30px #75FB4C, 0 0 40px #75FB4C, 0 0 50px #75FB4C, 0 0 60px #75FB4C, 0 0 70px #75FB4C, 0 0 80px #75FB4C, 0 1 90px #75FB4C;
+  }
+}
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+      text-shadow: 0 0 5px #75FB4C, 0 0 10px #75FB4C, 0 0 20px #75FB4C, 0 0 40px #75FB4C, 0 0 80px #75FB4C;
+    color: #75FB4C;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+      text-shadow: 0 0 5px #75FB4C, 0 0 10px #75FB4C, 0 0 20px #75FB4C, 0 0 40px #75FB4C, 0 0 80px #75FB4C;
+    color: #75FB4C;
+  }
+}
+
+ 

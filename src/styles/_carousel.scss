@@ -1,0 +1,24 @@
+/* src/styles/_carousel.scss */
+/* Custom Swiper carousel styling with glassmorphism and cards effect */
+.swiper {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.swiper-slide {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .swiper-slide {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+}

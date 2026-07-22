@@ -1,0 +1,7 @@
+@use '/src/styles/utils/variables' as *;
+@use '/src/styles/utils/mixins' as *;
+
+
+.btn2{
+    @include button2()
+}

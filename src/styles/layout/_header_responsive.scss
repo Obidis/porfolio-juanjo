@@ -1,0 +1,40 @@
+@use '/src/styles/utils/mixins' as *;
+@use'/src/styles/utils/variables' as *;
+
+header{
+    position: relative;
+    
+    .header_container{
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 1em;
+        margin: 0 auto;
+        overflow-x: hidden;
+        justify-items: center;
+        
+        @include breakpoint(tablet){
+            justify-content: center;
+            justify-items: center;
+        }
+        @include breakpoint(desktop){
+            justify-content: center;
+            justify-items: center;
+        }
+        @include breakpoint(desktopxl){
+            justify-content: center;
+            justify-items: center;
+        }
+        
+        .logo{
+            margin-bottom: 1em;
+            margin-top: 1em;
+            
+        }
+        .header_name{
+           
+           
+        }
+        
+       
+    }
+}
