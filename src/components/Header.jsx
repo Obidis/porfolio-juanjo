@@ -3,13 +3,17 @@ import { Sun, Moon, Menu, X } from 'lucide-react';
 import { SpainFlag, UKFlag } from './Flags';
 import { translations } from '../utils/translations';
 
-export default function Header({ theme, toggleTheme, lang, setLang }) {
+export default function Header({ theme, toggleTheme, lang, setLang, onContactClick }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const t = translations[lang].nav;
 
   const handleNavClick = (e, targetId) => {
     e.preventDefault();
     setMenuOpen(false);
+    if (targetId === '#contacto' && onContactClick) {
+      onContactClick();
+      return;
+    }
     const element = document.querySelector(targetId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });

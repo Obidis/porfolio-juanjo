@@ -2,8 +2,13 @@ import React from 'react';
 import { Mail, MessageSquare } from 'lucide-react';
 import { translations } from '../utils/translations';
 
-export default function ContactSection({ lang = 'es' }) {
+export default function ContactSection({ lang = 'es', onContactClick }) {
   const t = translations[lang].contact;
+
+  const handleEmailClick = (e) => {
+    e.preventDefault();
+    onContactClick?.();
+  };
 
   return (
     <section id="contacto" class="skills-section">
@@ -17,7 +22,8 @@ export default function ContactSection({ lang = 'es' }) {
         border: '1px solid var(--card-border)',
         borderRadius: '1.25rem',
         padding: '2rem',
-        boxShadow: '0 10px 30px var(--shadow-color)'
+        boxShadow: '0 10px 30px var(--shadow-color)',
+        maxWidth: '600px'
       }}>
         <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '1rem', lineHeight: '1.6' }}>
           {t.desc}
@@ -25,9 +31,10 @@ export default function ContactSection({ lang = 'es' }) {
 
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <a 
-            href="mailto:jjsantosfernandez@proton.me" 
-            class="btn-primary" 
-            style={{ width: 'auto', display: 'inline-flex' }}
+            href="#"
+            onClick={handleEmailClick}
+            className="btn-primary"
+            style={{ width: 'auto', display: 'inline-flex', pointerEvents: 'auto' }}
           >
             <Mail size={18} />
             {t.emailBtn}

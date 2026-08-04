@@ -2,8 +2,13 @@ import React from 'react';
 import { Mail, Phone, MapPin, MessageSquare, Send } from 'lucide-react';
 import { translations } from '../utils/translations';
 
-export default function Sidebar({ lang = 'es' }) {
+export default function Sidebar({ lang = 'es', onContactClick }) {
   const t = translations[lang].sidebar;
+
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    onContactClick?.();
+  };
 
   return (
     <aside class="sidebar">
@@ -32,7 +37,7 @@ export default function Sidebar({ lang = 'es' }) {
         <ul class="contact-info-list">
           <li class="contact-info-item">
             <Mail class="info-icon" size={18} color="#5cd93e" />
-            <a href="mailto:jjsantosfernandez@proton.me" class="info-text">jjsantosfernandez@proton.me</a>
+            <a href="#" onClick={handleContactClick} class="info-text">jjsantosfernandez@proton.me</a>
           </li>
           <li class="contact-info-item">
             <Phone class="info-icon" size={18} color="#5cd93e" />
@@ -84,7 +89,8 @@ export default function Sidebar({ lang = 'es' }) {
             <MessageSquare size={20} />
           </a>
           <a 
-            href="mailto:jjsantosfernandez@proton.me" 
+            href="#" 
+            onClick={handleContactClick}
             class="social-btn" 
             aria-label="Email"
             title="Email"
@@ -94,7 +100,7 @@ export default function Sidebar({ lang = 'es' }) {
         </div>
 
         {/* Primary Contact CTA */}
-        <a href="mailto:jjsantosfernandez@proton.me" class="btn-primary">
+        <a href="#" onClick={handleContactClick} class="btn-primary">
           <Send size={18} />
           {t.contactBtn}
         </a>
