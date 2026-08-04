@@ -11,7 +11,7 @@ export default function Sidebar({ lang = 'es' }) {
         {/* Profile Avatar */}
         <div class="profile-avatar-container">
           <img 
-            src="./img/yo.avif" 
+            src="./img/yo.webp" 
             alt="Juan José Santos" 
             class="profile-avatar"
             onError={(e) => {
