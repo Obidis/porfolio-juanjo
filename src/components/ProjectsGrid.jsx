@@ -4,6 +4,28 @@ import { translations } from '../utils/translations';
 
 const PROJECTS_DATA = [
   {
+    id: 0,
+    title: { es: "Web de Negocios", en: "Business Website" },
+    description: {
+      es: "Sitio web corporativo de Ōkami, agencia independiente de Diseño Web y Marketing Digital especializada en dar visibilidad a comercios locales y emprendedores.",
+      en: "Corporate website for Ōkami, an independent web design and digital marketing agency specializing in boosting the visibility of local businesses and entrepreneurs."
+    },
+    image: "./img/okamiPic.webp",
+    largeImage: "./img/okamiPic.webp",
+    technologies: [
+      { name: "React 19", class: "badge-django" },
+      { name: "React Icons", class: "badge-django" },
+      { name: "HTML5", class: "badge-html" },
+      { name: "Sass", class: "badge-sass" },
+      { name: "Oxlint", class: "badge-css" },
+      { name: "TypeScript", class: "badge-js" },
+      { name: "JS", class: "badge-js" },
+      { name: "Git", class: "badge-git" }
+    ],
+    demoUrl: "https://obidis.github.io/okami/",
+    githubUrl: "https://github.com/Obidis/okami"
+  },
+  {
     id: 1,
     title: { es: "Control de Stock", en: "Stock Control" },
     description: {
