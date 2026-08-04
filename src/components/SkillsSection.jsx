@@ -10,7 +10,8 @@ const SKILLS_DATA = [
   { name: "Streamlit", percentage: 80, icon: "./img/streamlit-icon.svg", color: "#ff4b4b" },
   { name: "Django", percentage: 75, icon: "./img/django-icon.svg", color: "#092e20" },
   { name: "Git / GitHub", percentage: 85, icon: "./img/github-mark-white.svg", color: "#6e5494" },
-  { name: "SQL", percentage: 85, icon: "./img/sql.png", color: "#00758f" }
+  { name: "SQL", percentage: 85, icon: "./img/sql.png", color: "#00758f" },
+  { name: "IA", percentage: 80, icon: "/img/ai-icon.svg", color: "#ff6f00" }
 ];
 
 export default function SkillsSection({ lang = 'es' }) {

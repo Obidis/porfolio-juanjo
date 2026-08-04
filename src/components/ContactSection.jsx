@@ -39,16 +39,6 @@ export default function ContactSection({ lang = 'es', onContactClick }) {
             <Mail size={18} />
             {t.emailBtn}
           </a>
-          <a 
-            href="https://github.com/Obidis" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="btn-project btn-code" 
-            style={{ padding: '0.85rem 1.5rem', borderRadius: '0.75rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
-          >
-            <MessageSquare size={18} />
-            {t.githubBtn}
-          </a>
         </div>
       </div>
     </section>
