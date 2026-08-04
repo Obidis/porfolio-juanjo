@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { FaTelegramPlane } from 'react-icons/fa';
 import { translations } from '../utils/translations';
 
 export default function Sidebar({ lang = 'es', onContactClick }) {
@@ -73,10 +74,7 @@ export default function Sidebar({ lang = 'es', onContactClick }) {
             aria-label="Telegram"
             title="Telegram"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M22.539 5.937a.99.99 0 0 0-.484-1.251l-3.246-.582a.99.99 0 0 0-.889.31L11.16 13.395l-2.389-2.445a.99.99 0 0 0-1.418.006l-2.62 2.82a.99.99 0 0 0 .012 1.43l3.16 3.362a.99.99 0 0 0 1.406-.01l6.975-8.303a.99.99 0 0 0-.31-.89Z"></path>
-              <path d="M19.513 17.344a.99.99 0 0 1-.484 1.251l-3.246.582a.99.99 0 0 1-.889-.31L11.16 10.605l-2.389 2.445a.99.99 0 0 1-1.418-.006l-2.62-2.82a.99.99 0 0 1 .012-1.43l3.16-3.362a.99.99 0 0 1 1.406.01l6.975 8.303a.99.99 0 0 1-.31.89Z"></path>
-            </svg>
+            <FaTelegramPlane size={20} />
           </a>
           <a 
             href="#" 
