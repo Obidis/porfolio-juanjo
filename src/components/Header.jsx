@@ -24,7 +24,7 @@ export default function Header({ theme, toggleTheme, lang, setLang, onContactCli
     <header class="header-navbar">
       <div class="header-container">
         <a href="#" class="header-brand" onClick={(e) => handleNavClick(e, '#top')}>
-          <img src="/img/favicon.png" alt="Juan José Santos" class="brand-logo" />
+          <img src="./img/favicon.png" alt="Juan José Santos" class="brand-logo" />
           <h1 class="brand-title">Juan José Santos</h1>
         </a>
 
