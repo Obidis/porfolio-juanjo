@@ -30,7 +30,10 @@ export default function Sidebar({ lang = 'es', onContactClick }) {
         <h2 class="profile-name">Juan José Santos</h2>
         <span class="profile-role">{t.role}</span>
         
-        <p class="profile-bio">
+        <p class="profile-bio" style={{ textAlign: 'left' }}>
+          {t.greeting} <strong>{t.firstName}</strong>.<br />
+          <span style={{ fontWeight: 600, color: '#5cd93e' }}>{t.degree}</span>
+          <hr style={{ border: 'none', borderTop: '1px solid #333', margin: '8px 0', width: '100%' }} />
           {t.bio}
         </p>
 

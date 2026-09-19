@@ -65,26 +65,7 @@ const PROJECTS_DATA = [
     demoUrl: "https://recetario-2kf4.onrender.com/es/",
     githubUrl: "https://github.com/Obidis/recetario"
   },
-  {
-    id: 3,
-    title: { es: "Cat Gallery", en: "Cat Gallery" },
-    description: {
-      es: "Landing page estática con un diseño profesional. Implementación de tipografía, animaciones y colores fieles al diseño original. Uso de Sass para mantener una estructura de estilos organizada y modular. Uso de Fetch para solicitar las imágenes en tiempo real al servidor, con filtrado de imágenes por raza. Comportamiento responsive.",
-      en: "Static landing page with a professional design. Typography, animations, and colors faithful to the original design. Uses Sass for modular styles, and Fetch to request images in real-time with breed filtering. Responsive layout."
-    },
-    image: "./img/catGallery.png",
-    largeImage: "./img/catGallery.png",
-    technologies: [
-      { name: "HTML5", class: "badge-html" },
-      { name: "CSS3", class: "badge-css" },
-      { name: "JS", class: "badge-js" },
-      { name: "Sass", class: "badge-sass" },
-      { name: "Vite", class: "badge-vite" },
-      { name: "Git", class: "badge-git" }
-    ],
-    demoUrl: "https://obidis.github.io/Dog-Gallery/",
-    githubUrl: "https://github.com/Obidis/Dog-Gallery"
-  },
+  
   {
     id: 4,
     title: { es: "Chronograph", en: "Chronograph" },
@@ -265,23 +246,7 @@ const PROJECTS_DATA = [
     demoUrl: "https://obidis.github.io/porfolio/",
     githubUrl: "https://github.com/Obidis/porfolio"
   },
-  {
-    id: 15,
-    title: { es: "Web Academy", en: "Web Academy" },
-    description: {
-      es: "Portal académico dinámico desarrollado con arquitectura modular y lógica interactiva de navegación.",
-      en: "Dynamic academic portal developed with modular architecture and interactive navigation logic."
-    },
-    image: "./img/academy.jpg",
-    largeImage: "./img/academy-grande.jpg",
-    technologies: [
-      { name: "HTML", class: "badge-html" },
-      { name: "CSS", class: "badge-css" },
-      { name: "JS / JAVA", class: "badge-java" }
-    ],
-    demoUrl: "https://obidis.github.io/academy/",
-    githubUrl: "https://github.com/Obidis/academy"
-  }
+  
 ];
 
 export default function ProjectsGrid({ lang = 'es' }) {

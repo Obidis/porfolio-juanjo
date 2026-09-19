@@ -5,9 +5,12 @@ export const translations = {
       skills: "Habilidades",
       contact: "Contacto",
     },
-    sidebar: {
+sidebar: {
       role: "Desarrollador Web FULLSTACK",
-      bio: "¡Hola! Soy Juancho, Licenciado en el Máster de Desarrollo Fullstack. Me apasiona el desarrollo web y disfruto diseñando toda la parte del FrontEnd, creando páginas visualmente elegantes y con todas las funciones necesarias para entregar un producto final totalmente funcional.",
+      greeting: "¡Hola! Soy",
+      firstName: "Juancho",
+      degree: "Máster en Desarrollo Web Fullstack",
+      bio: "Me apasiona el desarrollo web y disfruto diseñando toda la parte del FrontEnd, creando páginas visualmente elegantes y con todas las funciones necesarias para entregar un producto final totalmente funcional.",
       location: "Madrid, España",
       contactBtn: "Contactar Conmigo",
     },
@@ -48,7 +51,10 @@ export const translations = {
     },
     sidebar: {
       role: "Fullstack Web Developer",
-      bio: "Hello! I'm Juancho, Fullstack Development Master's Graduate. I am passionate about web development and enjoy designing the entire FrontEnd, creating visually elegant pages with all the necessary features to deliver a fully functional final product.",
+      greeting: "Hello! I'm",
+      firstName: "Juancho",
+      degree: "Fullstack Web Development Master",
+      bio: "I am passionate about web development and enjoy designing the entire FrontEnd, creating visually elegant pages with all the necessary features to deliver a fully functional final product.",
       location: "Madrid, Spain",
       contactBtn: "Contact Me",
     },
